@@ -5,12 +5,13 @@ A complete RESTful API built with **Node.js** and **Express** that manages a boo
 
 ---
 
-## Features
+## 🚀 Features
 
 - ✅ User Registration & Login (with JWT)
 - 📦 CRUD operations on Books
 - 🔐 Only authenticated users can manage books
 - 🧠 Only the book creator can update/delete their book
+- 🔍 Search books by genre (Bonus Feature)
 - 📁 Data is persisted using JSON files (`fs.promises`)
 - 🧪 MVC architecture (Models, Controllers, Routes)
 - 🪵 Logging middleware
@@ -82,7 +83,7 @@ Server runs at: [http://localhost:3000](http://localhost:3000)
 
 ### 📚 Book Routes *(Require JWT Token)*
 
-All routes require:
+All routes below require:
 ```
 Authorization: Bearer <token>
 ```
@@ -94,6 +95,35 @@ Authorization: Bearer <token>
 | POST   | `/api/books`     | Create new book         |
 | PUT    | `/api/books/:id` | Update book (own only)  |
 | DELETE | `/api/books/:id` | Delete book (own only)  |
+
+---
+
+### 🔍 Bonus Feature: Genre Search (Public) and used uuid package for book IDs. 
+
+| Method | Route                  | Description                |
+|--------|------------------------|----------------------------|
+| GET    | `/api/books/search?genre=Fiction` | Filter books by genre |
+
+Example:
+
+```http
+GET /api/books/search?genre=Fiction
+```
+
+Response:
+
+```json
+[
+  {
+    "id": "uuid",
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "genre": "Fiction",
+    "publishedYear": 1988,
+    "userId": "user-001"
+  }
+]
+```
 
 ---
 
