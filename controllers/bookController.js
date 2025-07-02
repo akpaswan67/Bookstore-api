@@ -65,3 +65,18 @@ exports.deleteBook = async (req, res) => {
   await bookModel.saveBooks(books);
   res.json({ message: 'Book deleted' });
 };
+
+exports.searchBooksByGenre = async (req, res) => {
+  const { genre } = req.query;
+
+  if (!genre) {
+    return res.status(400).json({ message: 'Genre query parameter is required' });
+  }
+
+  const books = await bookModel.getAllBooks();
+  const filtered = books.filter(book =>
+    book.genre.toLowerCase() === genre.toLowerCase()
+  );
+
+  res.json(filtered);
+};

@@ -1,10 +1,13 @@
 const express = require('express');
 const {
-  getAllBooks, getBookById, createBook, updateBook, deleteBook
+  getAllBooks, getBookById, createBook, updateBook, deleteBook, searchBooksByGenre
 } = require('../controllers/bookController');
 const authMiddleware = require('../middleware/authMiddleware');
 
 const router = express.Router();
+
+// Search books by genre
+router.get('/search', searchBooksByGenre);
 
 router.use(authMiddleware);
 

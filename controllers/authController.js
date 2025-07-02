@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken');
 const userModel = require('../models/userModel');
 const { v4: uuidv4 } = require('uuid');
 
+// Register a new user
 exports.register = async (req, res) => {
   const { email, password } = req.body;
   const users = await userModel.getAllUsers();
@@ -21,10 +22,10 @@ exports.register = async (req, res) => {
   users.push(newUser);
   await userModel.saveUsers(users);
 
-  // Save the new user to the file
   res.status(201).json({ message: 'User registered successfully' });
 };
 
+// Login an existing user
 exports.login = async (req, res) => {
   const { email, password } = req.body;
   const users = await userModel.getAllUsers();
