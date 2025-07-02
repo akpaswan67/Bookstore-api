@@ -1,10 +1,5 @@
 [
   {
-    "id": "ae5c8fdd-5fbf-4e09-8899-739be66c6979",
-    "email": "test@example.com",
-    "password": "$2b$10$5.3pKA1F9LBAJQyjzrxTaupT2JW65RWhM09J1kaaW.9r47/s0sBN."
-  },
-  {
     "id": "da7defea-2a8e-4c1f-b25a-d08e5be9c9bb",
     "email": "test1@gmail.com",
     "password": "$2b$10$.e6bjt3JOeToLXS7airBQegzRuSOZATxbX6pmRr/Fx6tgNSFT9TP2"
@@ -28,5 +23,10 @@
     "id": "c5a08fb0-3a66-4b90-8c88-83962a6c8f13",
     "email": "test11@gmail.com",
     "password": "$2b$10$LdM6oY3TqWzm4TE.lU2EWe8B2L96xLn9RJvkeeBba7/DoZ6EhUYMm"
+  },
+  {
+    "id": "a2c99d2b-ab54-40b5-86fd-d307de735cd9",
+    "email": "test9@gmail.com",
+    "password": "$2b$10$9Z/Z.A5/aUSsWxQ.BOMWT.zjnlLU1pgZKz.5GXt.LlctGtVNZOn82"
   }
 ]

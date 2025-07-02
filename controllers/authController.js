@@ -1,13 +1,15 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const { readData, writeData } = require('../utils/fileUtils');
-const { v4: uuidv4 } = require('uuid');
 
-const USERS_FILE = './data/users.json';
+const userModel = require('../models/userModel');
+const { v4: uuidv4 } = require('uuid');
 
 exports.register = async (req, res) => {
   const { email, password } = req.body;
-  const users = await readData(USERS_FILE);
+  const users = await userModel.getAllUsers();
+  if (!email || !password) {
+    return res.status(400).json({ message: 'Email and password are required' });
+  }
 
   if (users.find(user => user.email === email)) {
     return res.status(400).json({ message: 'User already exists' });
@@ -17,15 +19,20 @@ exports.register = async (req, res) => {
   const newUser = { id: uuidv4(), email, password: hashedPassword };
 
   users.push(newUser);
-  await writeData(USERS_FILE, users);
+  await userModel.saveUsers(users);
 
+  // Save the new user to the file
   res.status(201).json({ message: 'User registered successfully' });
 };
 
 exports.login = async (req, res) => {
   const { email, password } = req.body;
-  const users = await readData(USERS_FILE);
+  const users = await userModel.getAllUsers();
+  if (!email || !password) {
+    return res.status(400).json({ message: 'Email and password are required' });
+  }
 
+  // Check if user exists and password matches
   const user = users.find(u => u.email === email);
   if (!user || !(await bcrypt.compare(password, user.password))) {
     return res.status(401).json({ message: 'Invalid credentials' });
