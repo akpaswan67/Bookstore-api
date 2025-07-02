@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "ae5c8fdd-5fbf-4e09-8899-739be66c6979",
+    "email": "test@example.com",
+    "password": "$2b$10$5.3pKA1F9LBAJQyjzrxTaupT2JW65RWhM09J1kaaW.9r47/s0sBN."
+  },
+  {
+    "id": "da7defea-2a8e-4c1f-b25a-d08e5be9c9bb",
+    "email": "test1@gmail.com",
+    "password": "$2b$10$.e6bjt3JOeToLXS7airBQegzRuSOZATxbX6pmRr/Fx6tgNSFT9TP2"
+  },
+  {
+    "id": "347aafdb-c0f9-4147-87c7-4be793e611ad",
+    "email": "test2@gmail.com",
+    "password": "$2b$10$.gLl3GZckzBS3kCysTCx..Kfp4dU./O.t1x0DJxyvW.oEkT.sY4XG"
+  },
+  {
+    "id": "3a9d84c9-b28c-495a-a188-fb137855f1a3",
+    "email": "test3@gmail.com",
+    "password": "$2b$10$6WSmnrW//4GP00fWhkd1Q.aL7cfJHg40VvShvNtGWHNWdqh7nPXmy"
+  },
+  {
+    "id": "e131aec9-6f4b-4b2b-94ec-7d6f7a73acf2",
+    "email": "test4@gmail.com",
+    "password": "$2b$10$Mv9Uh4yGogtcE.iyHRbeGuweZCzJqPYKAlVEnwF53R0McaR/K6M1K"
+  },
+  {
+    "id": "c5a08fb0-3a66-4b90-8c88-83962a6c8f13",
+    "email": "test11@gmail.com",
+    "password": "$2b$10$LdM6oY3TqWzm4TE.lU2EWe8B2L96xLn9RJvkeeBba7/DoZ6EhUYMm"
+  }
+]

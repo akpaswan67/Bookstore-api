@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "02ff2738-04d9-4ff5-9f5b-5a832e4c8b9b",
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "genre": "Fiction",
+    "publishedYear": 1988,
+    "userId": "ae5c8fdd-5fbf-4e09-8899-739be66c6979"
+  },
+  {
+    "id": "348eaf4b-dae4-4568-95d3-7eb0777a6ecf",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "genre": "Self-help",
+    "publishedYear": 2018,
+    "userId": "ae5c8fdd-5fbf-4e09-8899-739be66c6979"
+  },
+  {
+    "id": "665df3f2-d708-45e2-8f97-c52fe652f591",
+    "title": "A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "genre": "Non-fiction",
+    "publishedYear": 2012,
+    "userId": "ae5c8fdd-5fbf-4e09-8899-739be66c6979"
+  },
+  {
+    "id": "a3be00af-0944-4b07-af37-dce882e408c7",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": "Classic",
+    "publishedYear": 1960,
+    "userId": "c5a08fb0-3a66-4b90-8c88-83962a6c8f13"
+  },
+  {
+    "id": "f4e47682-8964-4ff5-9581-f5f60a0cf0b9",
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "genre": "Programming",
+    "publishedYear": 1999,
+    "userId": "c5a08fb0-3a66-4b90-8c88-83962a6c8f13"
+  },
+  {
+    "id": "cdb7d4d4-9143-4ae0-a177-9d634c5f0798",
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "genre": "Programming",
+    "publishedYear": 1999,
+    "userId": "c5a08fb0-3a66-4b90-8c88-83962a6c8f13"
+  }
+]
